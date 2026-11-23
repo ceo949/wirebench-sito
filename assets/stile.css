@@ -197,3 +197,7 @@ textarea { min-height: 130px; }
 .scheda-video p { margin: .3em 0; font-size: .93rem; color: #c9cace; }
 .scheda-video .link-video { font-size: .88rem; }
 .copertina-guida img { border: 1px solid var(--linea); }
+
+/* Modulo Tally (sfondo trasparente, testo scuro): riquadro chiaro perché si legga sul fondo scuro */
+.modulo-tally { background: #f2f1ec; border-radius: 10px; padding: 18px 20px 4px; margin: 10px 0; }
+.modulo-tally iframe { display: block; width: 100%; border: 0; }
