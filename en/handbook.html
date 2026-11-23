@@ -16,7 +16,10 @@
   <meta property="og:url" content="https://wirebench.it/en/handbook.html">
   <meta property="og:locale" content="en_GB">
   <meta property="og:locale:alternate" content="it_IT">
-  <meta name="twitter:card" content="summary">
+  <meta property="og:image" content="https://wirebench.it/img/condivisione.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
   <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -60,6 +63,66 @@
     "@id": "https://wirebench.it/#organizzazione"
    },
    "keywords": "wire stripping, crimping, wiring harness, harness maker, soldering, connectors, testing"
+  },
+  {
+   "@type": "VideoObject",
+   "name": "Wire stripping: good or rework? How to spot cut strands (ch. 7)",
+   "description": "The same strip done twice: partial strip with the insulation slug left on, good; with the blade closed too far, cutting strands, rework.",
+   "thumbnailUrl": [
+    "https://i.ytimg.com/vi/QcXo6YFM99U/hqdefault.jpg"
+   ],
+   "embedUrl": "https://www.youtube.com/embed/QcXo6YFM99U",
+   "url": "https://www.youtube.com/watch?v=QcXo6YFM99U",
+   "inLanguage": "it",
+   "publisher": {
+    "@id": "https://wirebench.it/#organizzazione"
+   },
+   "uploadDate": "2026-11-23"
+  },
+  {
+   "@type": "VideoObject",
+   "name": "Crimping contacts: insulation under the wings? Good or rework (ch. 11)",
+   "description": "Conductor and insulation in the right zones of the contact, good; insulation caught in the conductor crimp because the strip is too short, rework.",
+   "thumbnailUrl": [
+    "https://i.ytimg.com/vi/eEu3oSdvK0Q/hqdefault.jpg"
+   ],
+   "embedUrl": "https://www.youtube.com/embed/eEu3oSdvK0Q",
+   "url": "https://www.youtube.com/watch?v=eEu3oSdvK0Q",
+   "inLanguage": "it",
+   "publisher": {
+    "@id": "https://wirebench.it/#organizzazione"
+   },
+   "uploadDate": "2026-11-23"
+  },
+  {
+   "@type": "VideoObject",
+   "name": "Crimping: copper not reaching the end? How to spot it (ch. 12)",
+   "description": "Strand tips visible past the wings, good; conductor that does not reach the end of the contact because the strip is too short, rework.",
+   "thumbnailUrl": [
+    "https://i.ytimg.com/vi/Jgr3CydS0PA/hqdefault.jpg"
+   ],
+   "embedUrl": "https://www.youtube.com/embed/Jgr3CydS0PA",
+   "url": "https://www.youtube.com/watch?v=Jgr3CydS0PA",
+   "inLanguage": "it",
+   "publisher": {
+    "@id": "https://wirebench.it/#organizzazione"
+   },
+   "uploadDate": "2026-11-23"
+  },
+  {
+   "@type": "VideoObject",
+   "name": "Crimping: strands outside the contact? Why it is rework (ch. 12)",
+   "description": "Compact strands all inside the wings, good; two strands opened during stripping left outside the wings, rework.",
+   "thumbnailUrl": [
+    "https://i.ytimg.com/vi/_Ivq_IOWpnY/hqdefault.jpg"
+   ],
+   "embedUrl": "https://www.youtube.com/embed/_Ivq_IOWpnY",
+   "url": "https://www.youtube.com/watch?v=_Ivq_IOWpnY",
+   "inLanguage": "it",
+   "publisher": {
+    "@id": "https://wirebench.it/#organizzazione"
+   },
+   "uploadDate": "2026-11-23"
   }
  ]
 }
@@ -72,7 +135,7 @@
   
   <header class="testata">
     <div class="contenitore">
-      <a class="marchio" href="index.html"><span class="filo" aria-hidden="true"></span>WireBench <small>harnesses since 1978</small></a>
+      <a class="marchio" href="index.html"><img src="../img/logo-wb.png" alt="" width="40" height="40"><span>WireBench <b>Lab</b></span><small>harnesses since 1978</small></a>
       <nav class="menu" aria-label="Main menu">
         <a href="index.html">Home</a>
         <a href="repairs-and-replicas.html">Repairs & replicas</a>
@@ -96,13 +159,14 @@
           <p>A handbook for people who work at the bench. It does not teach theory: it shows what to do with a wire to cut, a contact to crimp, a connector to fill, a harness to test. And how to tell, by looking at it, whether the job is good or must be redone.</p>
           <p>We wrote it at Nuova Elettronica, where we have been making wiring harnesses since 1978. The photos are taken at our benches.</p>
         </div>
-        <div class="foto-segnaposto" role="img" aria-label="Handbook cover (image to be prepared)">Handbook cover (image to be prepared)</div>
+        <figure class="foto copertina-guida"><img src="../img/copertina-guida-en.jpg" alt="Cover: WireBench — The Harness Maker's Handbook" width="1200" height="900"></figure>
       </section>
 
       <div class="riquadro" style="margin:24px 0">
         <p style="margin-top:0"><strong>Price and release date</strong> are sent to everyone who leaves their details in the form below.</p>
         <p><strong>In preparation.</strong> The handbook will be released when it is complete, with all its photos. The Italian edition comes first; <strong>the English edition is in preparation.</strong> Follow the YouTube channel <a href="https://www.youtube.com/@wirebenchlab" rel="noopener">@wirebenchlab</a> to know when it is out.</p>
         <div class="pulsanti"><button class="btn" type="button" disabled aria-disabled="true">Available soon</button> <a class="btn secondario" href="#informazioni">I want more information</a></div>
+        <p>▶ Watch the chapter videos: <a href="#cap-7">ch. 7</a> · <a href="#cap-11">ch. 11</a> · <a href="#cap-12">ch. 12</a></p>
       </div>
 
       <h2>Who it is for</h2>
@@ -115,7 +179,7 @@
       <section id="indice">
       <h2>Chapter list</h2>
       <p>The handbook has six parts and 30 chapters, organised around the situations you meet on the job.
-      For every situation: what to do, how to check it, photos of good work and of work to be redone.</p>
+      For every situation: what to do, how to check it, photos of good work and of work to be redone. Next to the chapters you find the <strong>videos</strong>: the same job done right and done wrong (Italian edition).</p>
 
         <h3>Part 1 — Before you start</h3>
         <ol class="capitoli">
@@ -129,15 +193,23 @@
         <h3>Part 2 — Preparing the wires</h3>
         <ol class="capitoli">
           <li id="cap-6"><span class="num">Ch. 6</span> Cutting to length</li>
-          <li id="cap-7"><span class="num">Ch. 7</span> Wire stripping</li>
+          <li id="cap-7" class="con-video"><div class="cap-testo"><span class="num">Ch. 7</span> Wire stripping</div><div class="cap-video"><figure class="video" data-yt="QcXo6YFM99U"><div class="video-schermo"><img src="../img/video/cap07-spelatura.jpg" alt="" width="960" height="540" loading="lazy"><button type="button" class="video-avvia" data-titolo="Wire stripping: good or rework? How to spot cut strands (ch. 7)"><span class="triangolo" aria-hidden="true"></span>Watch the video</button></div>
+            <figcaption><strong>Wire stripping: good or rework? How to spot cut strands (ch. 7)</strong><br>The same strip done twice: partial strip with the insulation slug left on, good; with the blade closed too far, cutting strands, rework. <a href="https://www.youtube.com/watch?v=QcXo6YFM99U" rel="noopener">Open on YouTube</a>
+            <span class="aiuto">The video loads from YouTube only when you press the button.</span></figcaption></figure></div></li>
           <li id="cap-8"><span class="num">Ch. 8</span> Tinning the wires</li>
           <li id="cap-9"><span class="num">Ch. 9</span> Marking and identification</li>
         </ol>
         <h3>Part 3 — Making the connections</h3>
         <ol class="capitoli">
           <li id="cap-10"><span class="num">Ch. 10</span> Crimping: choosing contact and tool</li>
-          <li id="cap-11"><span class="num">Ch. 11</span> Crimping: doing and checking</li>
-          <li id="cap-12"><span class="num">Ch. 12</span> Crimping: typical defects</li>
+          <li id="cap-11" class="con-video"><div class="cap-testo"><span class="num">Ch. 11</span> Crimping: doing and checking</div><div class="cap-video"><figure class="video" data-yt="eEu3oSdvK0Q"><div class="video-schermo"><img src="../img/video/cap11-crimpatura.jpg" alt="" width="960" height="540" loading="lazy"><button type="button" class="video-avvia" data-titolo="Crimping contacts: insulation under the wings? Good or rework (ch. 11)"><span class="triangolo" aria-hidden="true"></span>Watch the video</button></div>
+            <figcaption><strong>Crimping contacts: insulation under the wings? Good or rework (ch. 11)</strong><br>Conductor and insulation in the right zones of the contact, good; insulation caught in the conductor crimp because the strip is too short, rework. <a href="https://www.youtube.com/watch?v=eEu3oSdvK0Q" rel="noopener">Open on YouTube</a>
+            <span class="aiuto">The video loads from YouTube only when you press the button.</span></figcaption></figure></div></li>
+          <li id="cap-12" class="con-video"><div class="cap-testo"><span class="num">Ch. 12</span> Crimping: typical defects</div><div class="cap-video"><figure class="video" data-yt="Jgr3CydS0PA"><div class="video-schermo"><img src="../img/video/cap12-conduttore-corto.jpg" alt="" width="960" height="540" loading="lazy"><button type="button" class="video-avvia" data-titolo="Crimping: copper not reaching the end? How to spot it (ch. 12)"><span class="triangolo" aria-hidden="true"></span>Watch the video</button></div>
+            <figcaption><strong>Crimping: copper not reaching the end? How to spot it (ch. 12)</strong><br>Strand tips visible past the wings, good; conductor that does not reach the end of the contact because the strip is too short, rework. <a href="https://www.youtube.com/watch?v=Jgr3CydS0PA" rel="noopener">Open on YouTube</a>
+            <span class="aiuto">The video loads from YouTube only when you press the button.</span></figcaption></figure><figure class="video" data-yt="_Ivq_IOWpnY"><div class="video-schermo"><img src="../img/video/cap12-trefoli-fuori.jpg" alt="" width="960" height="540" loading="lazy"><button type="button" class="video-avvia" data-titolo="Crimping: strands outside the contact? Why it is rework (ch. 12)"><span class="triangolo" aria-hidden="true"></span>Watch the video</button></div>
+            <figcaption><strong>Crimping: strands outside the contact? Why it is rework (ch. 12)</strong><br>Compact strands all inside the wings, good; two strands opened during stripping left outside the wings, rework. <a href="https://www.youtube.com/watch?v=_Ivq_IOWpnY" rel="noopener">Open on YouTube</a>
+            <span class="aiuto">The video loads from YouTube only when you press the button.</span></figcaption></figure></div></li>
           <li id="cap-13"><span class="num">Ch. 13</span> Mechanical tests and cross-sections</li>
           <li id="cap-14"><span class="num">Ch. 14</span> Screw and spring terminals, ferrules</li>
           <li id="cap-15"><span class="num">Ch. 15</span> Insulation displacement connections</li>
