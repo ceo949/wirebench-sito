@@ -1,0 +1,96 @@
+# Configurazione di Pages CMS (https://pagescms.org) per lo storico lavori di wirebench.it.
+# Stefano entra su https://app.pagescms.org con il suo account GitHub, apre il repository del sito,
+# sceglie "Storico lavori" e aggiunge un lavoro compilando le caselle; le foto vanno in dati/foto/.
+# Il sito legge dati/lavori.json (elenco "lavori") con assets/lavori.js: i nomi dei campi qui sotto
+# devono restare uguali a quelli del file. Documentazione: https://pagescms.org/docs/configuration/
+
+media:
+  input: dati/foto          # cartella del repository dove finiscono le foto caricate
+  output: /dati/foto        # percorso scritto nel file lavori.json (dalla radice di wirebench.it)
+  extensions: [jpg, jpeg, png, webp]
+
+content:
+  - name: lavori
+    label: Storico lavori
+    type: file
+    path: dati/lavori.json
+    format: json
+    fields:
+      - name: lavori
+        label: Lavori pubblicati sul sito
+        description: "Solo lavori veri e finiti, foto di Stefano, con il permesso del cliente. Niente prezzi, ore o nome del cliente; nelle foto non si devono leggere targhe o dati personali."
+        type: object
+        list: true
+        fields:
+          - name: titolo
+            label: Veicolo
+            type: object
+            fields:
+              - name: it
+                label: "Veicolo (marca, modello, anno) — es. MARCA MODELLO (1968)"
+                type: string
+                required: true
+              - name: en
+                label: "Veicolo in inglese (facoltativo: se vuoto si usa l'italiano)"
+                type: string
+          - name: tipo
+            label: Tipo di lavoro
+            type: select
+            required: true
+            options:
+              values:
+                - name: riparazione
+                  label: Riparazione
+                - name: replica
+                  label: Replica dal campione
+          - name: cablaggio
+            label: Quale cablaggio
+            type: object
+            fields:
+              - name: it
+                label: "Quale cablaggio (es. anteriore, cruscotto, completo)"
+                type: string
+              - name: en
+                label: "In inglese (facoltativo)"
+                type: string
+          - name: problema
+            label: Il problema
+            type: object
+            fields:
+              - name: it
+                label: "Com'era il cablaggio quando è arrivato (2-3 frasi)"
+                type: text
+                required: true
+              - name: en
+                label: "In inglese (facoltativo)"
+                type: text
+          - name: intervento
+            label: L'intervento
+            type: object
+            fields:
+              - name: it
+                label: "Cosa abbiamo fatto, in parole semplici (3-5 frasi)"
+                type: text
+                required: true
+              - name: en
+                label: "In inglese (facoltativo)"
+                type: text
+          - name: foto_prima
+            label: Foto prima
+            type: image
+            required: true
+          - name: foto_dopo
+            label: Foto dopo
+            type: image
+            required: true
+          - name: foto_durante
+            label: Foto durante il lavoro (facoltativa)
+            type: image
+          - name: consegna
+            label: Data di consegna (sul sito si vede solo mese e anno)
+            type: date
+            options:
+              format: yyyy-MM-dd
+          - name: video
+            label: Link al video YouTube (facoltativo, deve iniziare con https://)
+            type: string

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ask for a quote — WireBench Lab</title>
+  <meta name="description" content="Send us your vehicle details and photos of your classic wiring harness: the first check on your photos is free and without obligation.">
+  <link rel="canonical" href="https://wirebench.it/en/quote-request.html">
+  <link rel="alternate" hreflang="it" href="https://wirebench.it/richiesta-preventivo.html">
+  <link rel="alternate" hreflang="en" href="https://wirebench.it/en/quote-request.html">
+  <link rel="alternate" hreflang="x-default" href="https://wirebench.it/richiesta-preventivo.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="WireBench">
+  <meta property="og:title" content="Ask for a quote — WireBench Lab">
+  <meta property="og:description" content="Send us your vehicle details and photos of your classic wiring harness: the first check on your photos is free and without obligation.">
+  <meta property="og:url" content="https://wirebench.it/en/quote-request.html">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:locale:alternate" content="it_IT">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="../assets/icona.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/stile.css">
+</head>
+<body>
+  <a class="salta" href="#contenuto">Skip to content</a>
+  
+  <header class="testata">
+    <div class="contenitore">
+      <a class="marchio" href="index.html"><span class="filo" aria-hidden="true"></span>WireBench <small>harnesses since 1978</small></a>
+      <nav class="menu" aria-label="Main menu">
+        <a href="index.html">Home</a>
+        <a href="repairs-and-replicas.html">Repairs & replicas</a>
+        <a href="quote-request.html" aria-current="page">Quote</a>
+        <a href="past-work.html">Past work</a>
+        <a href="handbook.html">Handbook</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+      <div class="lingua" aria-label="Language"><a href="../richiesta-preventivo.html" hreflang="it" lang="it" title="Italiano">IT</a><span lang="en" title="English">EN</span></div>
+    </div>
+  </header>
+  <main id="contenuto">
+    <div class="contenitore">
+
+      <p class="etichetta">WireBench Lab</p>
+      <h1>Ask for a quote</h1>
+      <p>Send us your vehicle details and a few photos of the harness. The first check on your photos is <strong>free</strong> and without obligation: we reply telling you whether the job can be done and what happens next.</p>
+      <p class="tempo-risposta"><strong>Reply within 2 working days.</strong></p>
+      <p class="aiuto">Fields marked <span class="obbl">*</span> are required.</p>
+
+      <form class="modulo" id="modulo-preventivo" novalidate>
+        <fieldset>
+          <legend>The vehicle</legend>
+          <div class="campo"><label for="marca">Make <span class="obbl" aria-hidden="true">*</span></label><span class="aiuto" id="marca-a">The manufacturer of the car or motorcycle.</span>
+            <input type="text" id="marca" name="marca" required autocomplete="off" aria-describedby="marca-a"></div>
+          <div class="campo"><label for="modello">Model <span class="obbl" aria-hidden="true">*</span></label><span class="aiuto" id="modello-a">Add the version or series, if you know it.</span>
+            <input type="text" id="modello" name="modello" required autocomplete="off" aria-describedby="modello-a"></div>
+          <div class="campo"><label for="anno">Year <span class="obbl" aria-hidden="true">*</span></label><span class="aiuto" id="anno-a">Year of manufacture or registration. If you are not sure, write what you know.</span>
+            <input type="text" id="anno" name="anno" required inputmode="numeric" pattern="[0-9]{4}" maxlength="4" aria-describedby="anno-a" style="max-width:9em"></div>
+          <div class="campo" role="radiogroup" aria-labelledby="tipo-t"><span class="titolo-campo" id="tipo-t">Vehicle type <span class="obbl" aria-hidden="true">*</span></span>
+            <div class="scelte colonne">
+              <label><input type="radio" name="tipo_veicolo" value="auto" required> Car</label>
+              <label><input type="radio" name="tipo_veicolo" value="moto" required> Motorcycle</label>
+              <label><input type="radio" name="tipo_veicolo" value="altro" required> Other</label>
+            </div></div>
+        </fieldset>
+
+        <fieldset>
+          <legend>The harness</legend>
+          <div class="campo" data-gruppo="quale_cablaggio"><span class="titolo-campo" id="quale-t">Which harness <span class="obbl" aria-hidden="true">*</span></span>
+            <div class="scelte colonne" role="group" aria-labelledby="quale-t">
+              <label><input type="checkbox" name="quale_cablaggio" value="anteriore"> Front</label>
+              <label><input type="checkbox" name="quale_cablaggio" value="posteriore"> Rear</label>
+              <label><input type="checkbox" name="quale_cablaggio" value="cruscotto"> Dashboard</label>
+              <label><input type="checkbox" name="quale_cablaggio" value="motore"> Engine</label>
+              <label><input type="checkbox" name="quale_cablaggio" value="completo"> Complete</label>
+              <label><input type="checkbox" name="quale_cablaggio" value="altro"> Other</label>
+            </div>
+            <input type="text" id="quale_altro" name="quale_altro" placeholder="Other: please specify" aria-label="Other: please specify" hidden></div>
+          <div class="campo" role="radiogroup" aria-labelledby="cosa-t"><span class="titolo-campo" id="cosa-t">What you need <span class="obbl" aria-hidden="true">*</span></span>
+            <div class="scelte">
+              <label><input type="radio" name="cosa_serve" value="riparazione" required> Repair of my harness</label>
+              <label><input type="radio" name="cosa_serve" value="replica" required> New replica from my original</label>
+              <label><input type="radio" name="cosa_serve" value="consiglio" required> I don't know, please advise</label>
+            </div></div>
+          <div class="campo"><label for="problema">The problem <span class="obbl" aria-hidden="true">*</span></label><span class="aiuto" id="problema-a">Describe what is wrong: burnt or cut wires, cracked insulation, corroded terminals, missing parts, past repairs. If the harness is still fitted to the vehicle, tell us.</span>
+            <textarea id="problema" name="problema" required aria-describedby="problema-a"></textarea></div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Photos</legend>
+          <div class="campo"><label for="foto">Photos of the harness <span class="obbl" aria-hidden="true">*</span></label><span class="aiuto" id="foto-a">JPG, PNG or HEIC; up to 10 photos, max <span data-max-mb>10</span> MB each.</span>
+            <p style="margin:.2em 0">For a useful check please send:</p>
+            <ol style="margin-top:0"><li>one photo of the whole harness laid out flat, from above;</li><li>close-ups of the damaged areas;</li><li>photos of the connectors and terminals at the ends;</li><li>the label or part number, if there is one.</li></ol>
+            <p class="aiuto">Good light and sharp photos help more than many photos.</p>
+            <input type="file" id="foto" name="foto" multiple required accept=".jpg,.jpeg,.png,.heic,.heif,image/jpeg,image/png,image/heic,image/heif" aria-describedby="foto-a">
+            <ul class="elenco-foto" id="elenco-foto" aria-live="polite"></ul></div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Your details</legend>
+          <div class="campo"><label for="nome">Full name <span class="obbl" aria-hidden="true">*</span></label><input type="text" id="nome" name="nome" required autocomplete="name"></div>
+          <div class="campo"><label for="azienda">Company <span class="aiuto" style="display:inline">(optional)</span></label><input type="text" id="azienda" name="azienda" autocomplete="organization"></div>
+          <div class="campo"><label for="email">Email <span class="obbl" aria-hidden="true">*</span></label><input type="email" id="email" name="email" required autocomplete="email"></div>
+          <div class="campo"><label for="telefono">Phone <span class="aiuto" style="display:inline">(optional)</span></label><input type="tel" id="telefono" name="telefono" autocomplete="tel"></div>
+          <div class="campo"><label for="paese">Country <span class="obbl" aria-hidden="true">*</span></label><span class="aiuto" id="paese-a">We need it for shipping and customs.</span>
+            <select id="paese" name="paese" required aria-describedby="paese-a"><option value="">— choose —</option><option>Italy</option><option>Austria</option><option>Belgium</option><option>France</option><option>Germany</option><option>Netherlands</option><option>Portugal</option><option>Spain</option><option>Switzerland</option><option>United Kingdom</option><option>Ireland</option><option>Denmark</option><option>Sweden</option><option>Norway</option><option>Finland</option><option>Poland</option><option>Czech Republic</option><option>Slovenia</option><option>Croatia</option><option>Greece</option><option>Luxembourg</option><option>Malta</option><option>San Marino</option><option>United States</option><option>Canada</option><option>Australia</option><option>New Zealand</option><option>Japan</option><option>Other country</option></select></div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Privacy</legend>
+          <div class="campo"><label class="consenso"><input type="checkbox" id="privacy" name="privacy" value="si" required> <span>I have read the <a href="privacy.html">privacy notice</a> <span class="obbl" aria-hidden="true">*</span></span></label>
+            <span class="aiuto">Your data and photos are used only to assess your request and reply to you. Data controller: Nuova Elettronica S.r.l.</span></div>
+        </fieldset>
+
+        <button type="submit" class="btn">Send request</button>
+        <div id="esito" aria-live="polite"></div>
+      </form>
+    </div>
+  </main>
+  <footer class="piede">
+    <div class="contenitore">
+      <p>WireBench is a brand of Nuova Elettronica S.r.l. — Viale Caduti della Polveriera 21, 10051 Avigliana (TO), Italy — VAT IT 12220630011 — R.E.A. TO-1273965 — <a href="mailto:info@cablaggitalia.com">info@cablaggitalia.com</a> — <a href="tel:+393802189876">+39 380 218 9876</a> — <a href="privacy.html">Privacy</a></p>
+      <p>Wiring harnesses since 1978 — ISO 9001 certified company · <a href="https://www.youtube.com/@wirebenchlab" rel="noopener">YouTube @wirebenchlab</a> · <a href="../richiesta-preventivo.html" hreflang="it">Italiano</a></p>
+    </div>
+  </footer>
+  <script src="../assets/modulo.js"></script>
+</body>
+</html>

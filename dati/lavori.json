@@ -1,0 +1,36 @@
+{
+  "_istruzioni": [
+    "Storico lavori di wirebench.it. Il sito mostra SOLO l'elenco \"lavori\" qui sotto; tutto il resto di questo file viene ignorato.",
+    "Si aggiunge una scheda solo per un lavoro vero e finito, con le foto di Stefano e il permesso del cliente a mostrare il veicolo.",
+    "Niente prezzo, niente ore, niente nome del cliente. Controllare che nelle foto non si leggano targhe o dati personali.",
+    "Per aggiungere un lavoro: copiare il blocco \"_esempio_NON_PUBBLICATO\" dentro le parentesi quadre di \"lavori\", cambiare tutti i valori, mettere le foto in dati/foto/ (JPG, lato lungo circa 1600 px).",
+    "Fra due schede ci vuole una virgola. Prima di salvare si può controllare il file su https://jsonlint.com (incolla e verifica).",
+    "Campi: id (breve, senza spazi), titolo, tipo (riparazione oppure replica), cablaggio, problema, intervento (testi in it e en), foto_prima, foto_dopo, foto_durante (facoltativa, anche vuota \"\"), consegna (AAAA-MM), video (link YouTube o \"\")."
+  ],
+  "_esempio_NON_PUBBLICATO": {
+    "id": "AAAA-MM-marca-modello",
+    "titolo": {
+      "it": "MARCA MODELLO (ANNO)",
+      "en": "MAKE MODEL (YEAR)"
+    },
+    "tipo": "riparazione",
+    "cablaggio": {
+      "it": "anteriore",
+      "en": "front"
+    },
+    "problema": {
+      "it": "Com'era il cablaggio quando è arrivato (2-3 frasi).",
+      "en": "What the harness was like when it arrived (2-3 sentences)."
+    },
+    "intervento": {
+      "it": "Cosa abbiamo fatto, in parole semplici (3-5 frasi).",
+      "en": "What we did, in plain words (3-5 sentences)."
+    },
+    "foto_prima": "dati/foto/AAAA-MM-marca-modello-prima.jpg",
+    "foto_dopo": "dati/foto/AAAA-MM-marca-modello-dopo.jpg",
+    "foto_durante": "",
+    "consegna": "AAAA-MM",
+    "video": ""
+  },
+  "lavori": []
+}

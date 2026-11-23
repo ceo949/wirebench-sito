@@ -1,0 +1,1 @@
+Cartella delle foto dello storico lavori (le carica Pages CMS). Questo file serve solo a far esistere la cartella nel repository.

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chiedi un preventivo — WireBench Lab</title>
+  <meta name="description" content="Mandaci i dati del veicolo e le foto del cablaggio d'epoca: la prima analisi sulle foto è gratis e senza impegno.">
+  <link rel="canonical" href="https://wirebench.it/richiesta-preventivo.html">
+  <link rel="alternate" hreflang="it" href="https://wirebench.it/richiesta-preventivo.html">
+  <link rel="alternate" hreflang="en" href="https://wirebench.it/en/quote-request.html">
+  <link rel="alternate" hreflang="x-default" href="https://wirebench.it/richiesta-preventivo.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="WireBench">
+  <meta property="og:title" content="Chiedi un preventivo — WireBench Lab">
+  <meta property="og:description" content="Mandaci i dati del veicolo e le foto del cablaggio d'epoca: la prima analisi sulle foto è gratis e senza impegno.">
+  <meta property="og:url" content="https://wirebench.it/richiesta-preventivo.html">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:locale:alternate" content="en_GB">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="assets/icona.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/stile.css">
+</head>
+<body>
+  <a class="salta" href="#contenuto">Vai al contenuto</a>
+  
+  <header class="testata">
+    <div class="contenitore">
+      <a class="marchio" href="index.html"><span class="filo" aria-hidden="true"></span>WireBench <small>cablaggi dal 1978</small></a>
+      <nav class="menu" aria-label="Menu principale">
+        <a href="index.html">Home</a>
+        <a href="riparazioni-e-repliche.html">Riparazioni e repliche</a>
+        <a href="richiesta-preventivo.html" aria-current="page">Preventivo</a>
+        <a href="storico-lavori.html">Lavori fatti</a>
+        <a href="guida.html">Guida</a>
+        <a href="chi-siamo.html">Chi siamo</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+      <div class="lingua" aria-label="Lingua"><span lang="it" title="Italiano">IT</span><a href="en/quote-request.html" hreflang="en" lang="en" title="English">EN</a></div>
+    </div>
+  </header>
+  <main id="contenuto">
+    <div class="contenitore">
+
+      <p class="etichetta">WireBench Lab</p>
+      <h1>Chiedi un preventivo</h1>
+      <p>Mandaci i dati del veicolo e qualche foto del cablaggio. La prima analisi sulle foto è <strong>gratis</strong> e senza impegno: ti rispondiamo dicendo se il lavoro si può fare e come procedere.</p>
+      <p class="tempo-risposta"><strong>Risposta entro 2 giorni lavorativi.</strong></p>
+      <p class="aiuto">I campi con <span class="obbl">*</span> sono obbligatori.</p>
+
+      <form class="modulo" id="modulo-preventivo" novalidate>
+        <fieldset>
+          <legend>Il veicolo</legend>
+          <div class="campo"><label for="marca">Marca <span class="obbl" aria-hidden="true">*</span></label><span class="aiuto" id="marca-a">Esempio: la casa costruttrice dell'auto o della moto.</span>
+            <input type="text" id="marca" name="marca" required autocomplete="off" aria-describedby="marca-a"></div>
+          <div class="campo"><label for="modello">Modello <span class="obbl" aria-hidden="true">*</span></label><span class="aiuto" id="modello-a">Scrivi anche la versione o la serie, se la conosci.</span>
+            <input type="text" id="modello" name="modello" required autocomplete="off" aria-describedby="modello-a"></div>
+          <div class="campo"><label for="anno">Anno <span class="obbl" aria-hidden="true">*</span></label><span class="aiuto" id="anno-a">Anno di costruzione o di immatricolazione. Se non sei sicuro, scrivi quello che sai.</span>
+            <input type="text" id="anno" name="anno" required inputmode="numeric" pattern="[0-9]{4}" maxlength="4" aria-describedby="anno-a" style="max-width:9em"></div>
+          <div class="campo" role="radiogroup" aria-labelledby="tipo-t"><span class="titolo-campo" id="tipo-t">Tipo di veicolo <span class="obbl" aria-hidden="true">*</span></span>
+            <div class="scelte colonne">
+              <label><input type="radio" name="tipo_veicolo" value="auto" required> Auto</label>
+              <label><input type="radio" name="tipo_veicolo" value="moto" required> Moto</label>
+              <label><input type="radio" name="tipo_veicolo" value="altro" required> Altro</label>
+            </div></div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Il cablaggio</legend>
+          <div class="campo" data-gruppo="quale_cablaggio"><span class="titolo-campo" id="quale-t">Quale cablaggio <span class="obbl" aria-hidden="true">*</span></span>
+            <div class="scelte colonne" role="group" aria-labelledby="quale-t">
+              <label><input type="checkbox" name="quale_cablaggio" value="anteriore"> Anteriore</label>
+              <label><input type="checkbox" name="quale_cablaggio" value="posteriore"> Posteriore</label>
+              <label><input type="checkbox" name="quale_cablaggio" value="cruscotto"> Cruscotto</label>
+              <label><input type="checkbox" name="quale_cablaggio" value="motore"> Motore</label>
+              <label><input type="checkbox" name="quale_cablaggio" value="completo"> Completo</label>
+              <label><input type="checkbox" name="quale_cablaggio" value="altro"> Altro</label>
+            </div>
+            <input type="text" id="quale_altro" name="quale_altro" placeholder="Altro: specifica" aria-label="Altro: specifica" hidden></div>
+          <div class="campo" role="radiogroup" aria-labelledby="cosa-t"><span class="titolo-campo" id="cosa-t">Cosa ti serve <span class="obbl" aria-hidden="true">*</span></span>
+            <div class="scelte">
+              <label><input type="radio" name="cosa_serve" value="riparazione" required> Riparazione del mio cablaggio</label>
+              <label><input type="radio" name="cosa_serve" value="replica" required> Replica nuova dal mio originale</label>
+              <label><input type="radio" name="cosa_serve" value="consiglio" required> Non lo so, consigliatemi voi</label>
+            </div></div>
+          <div class="campo"><label for="problema">Il problema <span class="obbl" aria-hidden="true">*</span></label><span class="aiuto" id="problema-a">Descrivi cosa non va: cavi bruciati, tagliati, isolante rotto, terminali ossidati, pezzi mancanti, riparazioni fatte in passato. Se il cablaggio è ancora montato sul veicolo, dillo.</span>
+            <textarea id="problema" name="problema" required aria-describedby="problema-a"></textarea></div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Le foto</legend>
+          <div class="campo"><label for="foto">Foto del cablaggio <span class="obbl" aria-hidden="true">*</span></label><span class="aiuto" id="foto-a">JPG, PNG o HEIC; fino a 10 foto, massimo <span data-max-mb>10</span> MB ciascuna.</span>
+            <p style="margin:.2em 0">Per un'analisi utile mandaci:</p>
+            <ol style="margin-top:0"><li>una foto di tutto il cablaggio steso, da sopra;</li><li>le foto da vicino dei punti rovinati;</li><li>le foto dei connettori e dei terminali alle estremità;</li><li>se c'è, l'etichetta o il codice del ricambio.</li></ol>
+            <p class="aiuto">Luce buona e foto a fuoco aiutano più di tante foto.</p>
+            <input type="file" id="foto" name="foto" multiple required accept=".jpg,.jpeg,.png,.heic,.heif,image/jpeg,image/png,image/heic,image/heif" aria-describedby="foto-a">
+            <ul class="elenco-foto" id="elenco-foto" aria-live="polite"></ul></div>
+        </fieldset>
+
+        <fieldset>
+          <legend>I tuoi contatti</legend>
+          <div class="campo"><label for="nome">Nome e cognome <span class="obbl" aria-hidden="true">*</span></label><input type="text" id="nome" name="nome" required autocomplete="name"></div>
+          <div class="campo"><label for="azienda">Azienda <span class="aiuto" style="display:inline">(facoltativo)</span></label><input type="text" id="azienda" name="azienda" autocomplete="organization"></div>
+          <div class="campo"><label for="email">Email <span class="obbl" aria-hidden="true">*</span></label><input type="email" id="email" name="email" required autocomplete="email"></div>
+          <div class="campo"><label for="telefono">Telefono <span class="aiuto" style="display:inline">(facoltativo)</span></label><input type="tel" id="telefono" name="telefono" autocomplete="tel"></div>
+          <div class="campo"><label for="paese">Paese <span class="obbl" aria-hidden="true">*</span></label><span class="aiuto" id="paese-a">Ci serve per le spedizioni e la dogana.</span>
+            <select id="paese" name="paese" required aria-describedby="paese-a"><option value="">— scegli —</option><option>Italia</option><option>Austria</option><option>Belgio</option><option>Francia</option><option>Germania</option><option>Paesi Bassi</option><option>Portogallo</option><option>Spagna</option><option>Svizzera</option><option>Regno Unito</option><option>Irlanda</option><option>Danimarca</option><option>Svezia</option><option>Norvegia</option><option>Finlandia</option><option>Polonia</option><option>Repubblica Ceca</option><option>Slovenia</option><option>Croazia</option><option>Grecia</option><option>Lussemburgo</option><option>Malta</option><option>San Marino</option><option>Stati Uniti</option><option>Canada</option><option>Australia</option><option>Nuova Zelanda</option><option>Giappone</option><option>Altro paese</option></select></div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Privacy</legend>
+          <div class="campo"><label class="consenso"><input type="checkbox" id="privacy" name="privacy" value="si" required> <span>Ho letto l'<a href="privacy.html">informativa sulla privacy</a> <span class="obbl" aria-hidden="true">*</span></span></label>
+            <span class="aiuto">I dati e le foto servono solo a valutare la tua richiesta e a risponderti. Titolare del trattamento: Nuova Elettronica S.r.l.</span></div>
+        </fieldset>
+
+        <button type="submit" class="btn">Invia la richiesta</button>
+        <div id="esito" aria-live="polite"></div>
+      </form>
+    </div>
+  </main>
+  <footer class="piede">
+    <div class="contenitore">
+      <p>WireBench è un marchio di Nuova Elettronica S.r.l. — Viale Caduti della Polveriera 21, 10051 Avigliana (TO), Italia — P. IVA 12220630011 — R.E.A. TO-1273965 — <a href="mailto:info@cablaggitalia.com">info@cablaggitalia.com</a> — <a href="tel:+393802189876">+39 380 218 9876</a> — <a href="privacy.html">Privacy</a></p>
+      <p>Cablaggi dal 1978 — Azienda certificata ISO 9001 · <a href="https://www.youtube.com/@wirebenchlab" rel="noopener">YouTube @wirebenchlab</a> · <a href="en/quote-request.html" hreflang="en">English</a></p>
+    </div>
+  </footer>
+  <script src="assets/modulo.js"></script>
+</body>
+</html>
